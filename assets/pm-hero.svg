@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="pmhTitle pmhDesc">
+<title id="pmhTitle">P-M interaction diagram, 400 by 400 column with 4H25</title>
+<desc id="pmhDesc">The design point at 800 kN and 180 kNm sits inside the interaction envelope. The moment resistance at that axial force is 240.3 kNm.</desc>
+<rect width="760" height="520" fill="#ffffff"/>
+<line x1="74.0" y1="34.0" x2="74.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="174.0" y1="34.0" x2="174.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="274.0" y1="34.0" x2="274.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="374.0" y1="34.0" x2="374.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="474.0" y1="34.0" x2="474.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="574.0" y1="34.0" x2="574.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="674.0" y1="34.0" x2="674.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="440.0" x2="714.0" y2="440.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="399.4" x2="714.0" y2="399.4" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="358.8" x2="714.0" y2="358.8" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="318.2" x2="714.0" y2="318.2" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="277.6" x2="714.0" y2="277.6" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="237.0" x2="714.0" y2="237.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="196.4" x2="714.0" y2="196.4" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="155.8" x2="714.0" y2="155.8" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="115.2" x2="714.0" y2="115.2" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="74.6" x2="714.0" y2="74.6" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="34.0" x2="714.0" y2="34.0" stroke="#e8eef4" stroke-width="1"/>
+<line x1="74.0" y1="358.8" x2="714.0" y2="358.8" stroke="#333333" stroke-width="1.4"/>
+<line x1="74.0" y1="34.0" x2="74.0" y2="440.0" stroke="#333333" stroke-width="1.4"/>
+<line x1="74.0" y1="358.8" x2="74.0" y2="363.8" stroke="#333333"/>
+<text x="74.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">0</text>
+<line x1="174.0" y1="358.8" x2="174.0" y2="363.8" stroke="#333333"/>
+<text x="174.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">50</text>
+<line x1="274.0" y1="358.8" x2="274.0" y2="363.8" stroke="#333333"/>
+<text x="274.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">100</text>
+<line x1="374.0" y1="358.8" x2="374.0" y2="363.8" stroke="#333333"/>
+<text x="374.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">150</text>
+<line x1="474.0" y1="358.8" x2="474.0" y2="363.8" stroke="#333333"/>
+<text x="474.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">200</text>
+<line x1="574.0" y1="358.8" x2="574.0" y2="363.8" stroke="#333333"/>
+<text x="574.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">250</text>
+<line x1="674.0" y1="358.8" x2="674.0" y2="363.8" stroke="#333333"/>
+<text x="674.0" y="379.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5c6b7a">300</text>
+<line x1="74.0" y1="440.0" x2="69.0" y2="440.0" stroke="#333333"/>
+<text x="65.0" y="444.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">-1000</text>
+<line x1="74.0" y1="399.4" x2="69.0" y2="399.4" stroke="#333333"/>
+<text x="65.0" y="403.4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">-500</text>
+<line x1="74.0" y1="318.2" x2="69.0" y2="318.2" stroke="#333333"/>
+<text x="65.0" y="322.2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">500</text>
+<line x1="74.0" y1="277.6" x2="69.0" y2="277.6" stroke="#333333"/>
+<text x="65.0" y="281.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">1000</text>
+<line x1="74.0" y1="237.0" x2="69.0" y2="237.0" stroke="#333333"/>
+<text x="65.0" y="241.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">1500</text>
+<line x1="74.0" y1="196.4" x2="69.0" y2="196.4" stroke="#333333"/>
+<text x="65.0" y="200.4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">2000</text>
+<line x1="74.0" y1="155.8" x2="69.0" y2="155.8" stroke="#333333"/>
+<text x="65.0" y="159.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">2500</text>
+<line x1="74.0" y1="115.2" x2="69.0" y2="115.2" stroke="#333333"/>
+<text x="65.0" y="119.2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">3000</text>
+<line x1="74.0" y1="74.6" x2="69.0" y2="74.6" stroke="#333333"/>
+<text x="65.0" y="78.6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">3500</text>
+<line x1="74.0" y1="34.0" x2="69.0" y2="34.0" stroke="#333333"/>
+<text x="65.0" y="38.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end" fill="#5c6b7a">4000</text>
+<polyline points="75.3,427.9 75.3,427.8 75.4,427.8 75.4,427.8 75.5,427.8 75.5,427.8 75.5,427.8 75.6,427.8 75.7,427.7 75.7,427.7 75.8,427.7 75.9,427.7 76.0,427.7 76.0,427.7 76.0,427.7 76.1,427.7 76.2,427.7 76.3,427.7 76.4,427.7 76.4,427.6 76.5,427.6 76.6,427.6 76.7,427.6 76.9,427.5 76.9,427.5 77.0,427.5 77.1,427.5 77.3,427.4 77.3,427.4 77.4,427.4 77.6,427.4 77.7,427.4 77.8,427.4 78.0,427.3 78.1,427.3 78.2,427.3 78.4,427.2 78.6,427.2 78.7,427.1 78.9,427.1 79.1,427.1 79.2,427.1 79.4,427.1 79.6,427.0 79.8,427.0 80.0,426.9 80.2,426.8 80.4,426.8 80.6,426.7 80.8,426.7 81.1,426.7 81.3,426.6 81.6,426.6 81.9,426.5 82.2,426.4 82.4,426.4 82.7,426.4 83.0,426.3 83.4,426.2 83.7,426.1 84.0,426.1 84.4,426.0 84.7,425.9 85.1,425.8 85.5,425.8 85.9,425.7 86.3,425.6 86.7,425.5 87.1,425.4 87.6,425.3 88.1,425.2 88.6,425.1 89.1,425.1 89.6,424.9 90.1,424.8 90.6,424.7 91.3,424.6 91.9,424.4 92.4,424.3 93.1,424.2 93.7,424.1 94.5,423.9 95.1,423.8 95.8,423.6 96.6,423.5 97.4,423.3 98.2,423.1 99.0,422.9 99.8,422.8 100.7,422.5 101.6,422.4 102.6,422.2 103.6,422.0 104.6,421.8 105.6,421.5 106.7,421.3 107.8,421.1 109.0,420.8 110.2,420.5 111.4,420.3 112.6,420.0 113.9,419.7 115.3,419.5 116.7,419.2 118.2,418.9 119.7,418.5 121.2,418.2 122.8,417.8 124.4,417.5 126.1,417.1 127.8,416.7 129.6,416.3 131.5,415.9 133.4,415.4 135.4,415.0 137.4,414.6 139.5,414.0 141.7,413.6 143.9,413.0 146.2,412.6 148.5,412.0 151.0,411.4 153.4,410.8 157.6,409.8 171.1,406.1 184.3,402.5 197.2,399.0 209.9,395.6 222.3,392.2 234.4,388.9 246.4,385.7 258.2,382.5 269.7,379.3 281.0,376.3 292.2,373.2 303.2,370.2 314.0,367.2 324.7,364.3 335.3,361.4 344.8,358.8 345.7,358.6 356.0,355.7 366.2,352.9 376.2,350.1 386.3,347.3 383.6,347.8 393.5,344.9 403.2,342.2 412.9,339.4 422.5,336.7 432.0,333.9 441.4,331.1 450.7,328.4 460.0,325.6 469.3,322.7 478.5,319.9 487.5,317.1 496.6,314.1 505.5,311.2 514.4,308.2 523.2,305.3 531.9,302.2 540.5,299.1 549.0,296.0 554.6,293.8 557.4,292.8 565.6,289.6 573.8,286.3 579.4,283.5 584.7,280.7 589.9,277.9 595.0,275.0 599.8,271.9 604.5,268.8 608.9,265.5 613.1,262.1 616.9,258.6 620.4,255.0 623.3,251.6 622.8,251.0 614.5,244.1 606.2,237.2 597.7,230.2 588.8,223.1 579.6,216.0 569.9,208.8 559.7,201.6 548.7,194.3 537.1,186.8 524.5,179.3 511.0,171.7 496.3,163.9 480.3,156.1 463.0,148.1 444.0,139.9 423.2,131.6 400.5,123.1 375.6,114.4 349.1,105.8 320.4,97.1 293.8,91.5 259.8,82.5 222.5,73.3 181.5,63.9 145.3,56.1 142.7,55.3 140.4,54.7 138.1,54.0 136.0,53.5 134.1,52.9 90.0,49.6 77.7,49.6" fill="none" stroke="#1a3a5c" stroke-width="3.4" stroke-linejoin="round"/>
+<line x1="74.0" y1="293.8" x2="554.6" y2="293.8" stroke="#e8913a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="434.0" y1="358.8" x2="434.0" y2="293.8" stroke="#e8913a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="434.0" cy="293.8" r="6.5" fill="#e8913a"/>
+<text x="423.0" y="282.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end" fill="#a65f1a">Design 180 / 800</text>
+<text x="562.6" y="311.8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#5c6b7a">M_Rd 240.3</text>
+<text x="394.0" y="505" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#333333">Moment M (kNm)</text>
+<text x="22" y="237.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#333333" transform="rotate(-90 22 237.0)">Axial force N (kN)</text>
+</svg>

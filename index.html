@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Civion — EC2 reinforced concrete section design</title>
+  <meta name="description" content="Civion runs the EN 1992-1-1 checks, draws the P-M interaction diagram, and assembles the calculation report — with the clause behind every number. Early access for structural engineers.">
+  <link rel="canonical" href="https://civion.cloud/">
+  <meta name="theme-color" content="#0d2137">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://civion.cloud/">
+  <meta property="og:title" content="Civion — EC2 section design that shows its work">
+  <meta property="og:description" content="EC2 checks, P-M interaction diagrams, and clause-cited calculation reports. In development; early access opening soon.">
+  <meta property="og:image" content="https://civion.cloud/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Civion — EC2 section design that shows its work">
+  <meta name="twitter:description" content="EC2 checks, P-M interaction diagrams, and clause-cited calculation reports. Early access opening soon.">
+  <meta name="twitter:image" content="https://civion.cloud/assets/og.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Civion home">
+        <img src="assets/civion-mark.svg" width="30" height="30" alt="">
+        <span>Civion</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#report">The report</a>
+        <a href="#examples">Examples</a>
+        <a href="#early-access">Early access</a>
+      </nav>
+      <a class="btn btn-small btn-accent" href="mailto:hugo@civion.cloud?subject=Civion%20early%20access">Join the list</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> EC2 reinforced concrete section design</p>
+          <h1>Section design that<br><em>shows its work.</em></h1>
+          <p class="lede">Civion runs the EN 1992-1-1 checks, draws the interaction diagram, and assembles the calculation report — with the clause behind every number. For engineers who still check the numbers.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="mailto:hugo@civion.cloud?subject=Civion%20early%20access">Join the early-access list</a>
+            <a class="btn btn-ghost" href="https://hugoyoungmsc.github.io/2026/10/24/ec2-shear-rectangular-beam-vertical-links.html">Read a worked example</a>
+          </div>
+          <p class="hero-note">In development · Early access soon · No payment now</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="diagram-card">
+            <div class="diagram-head">
+              <span>P-M interaction</span>
+              <span class="mono">400 × 400 · 4H25 · C30/37</span>
+            </div>
+            <img src="assets/pm-hero.svg" width="760" height="520"
+                 alt="P-M interaction diagram for a 400 by 400 mm column with 4H25 bars. The design point at N equals 800 kN and M equals 180 kNm sits inside the envelope; the moment resistance at that axial force is 240.3 kNm.">
+            <div class="check-card" aria-label="Example design check">
+              <div><span class="label">N_Ed</span><strong>800 kN</strong></div>
+              <div><span class="label">M_Ed</span><strong>180 kNm</strong></div>
+              <div><span class="label">M_Rd</span><strong>240.3 kNm</strong></div>
+              <div class="pass"><span class="label">Ratio</span><strong>0.75 · PASS</strong></div>
+            </div>
+          </div>
+          <p class="diagram-caption">Example from the EC2 §6.1 worked example. The design point is inside the interaction envelope.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> The spreadsheet tax</p>
+          <h2>The checks are not the hard part. Rebuilding them is.</h2>
+          <p class="lede">Every section starts the same way: copy the last spreadsheet, re-enter the geometry, remember which clause changed, and hope the hidden cells still hold.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-num mono">01</span>
+            <h3>Rebuilt from the last job</h3>
+            <p>Geometry, materials and bar layouts are retyped for every section. One stale cell and the answer looks right for the wrong reason.</p>
+          </article>
+          <article class="card">
+            <span class="card-num mono">02</span>
+            <h3>Assumptions buried in cells</h3>
+            <p>Which national annex? Which strut angle? Which <span class="mono">v_min</span>? The spreadsheet remembers, but the report does not show it.</p>
+          </article>
+          <article class="card">
+            <span class="card-num mono">03</span>
+            <h3>Reports assembled by hand</h3>
+            <p>The calculation is done, then the report is written again — screenshots, tables and clause references pasted into Word.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> How it works</p>
+          <h2>One workflow, from section to checked report.</h2>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="step-num mono">01</span>
+            <h3>Define the section</h3>
+            <p>Rectangular or circular, bars, links, materials and cover. One input set, reusable across load cases.</p>
+            <span class="tag mono">Inputs</span>
+          </article>
+          <article class="step">
+            <span class="step-num mono">02</span>
+            <h3>Run the EC2 checks</h3>
+            <p>Bending with axial force, shear and detailing. The governing clause and the intermediate values are kept.</p>
+            <span class="tag mono">§6.1 · §6.2 · §9.2</span>
+          </article>
+          <article class="step">
+            <span class="step-num mono">03</span>
+            <h3>Read the interaction diagram</h3>
+            <p>The P-M envelope from strain compatibility, with the design point and the governing mode marked.</p>
+            <span class="tag mono">P-M · §6.1</span>
+          </article>
+          <article class="step">
+            <span class="step-num mono">04</span>
+            <h3>Export the calculation report</h3>
+            <p>Inputs, equations, results and a pass/fail summary in one document — ready for review.</p>
+            <span class="tag mono">Report</span>
+          </article>
+        </div>
+        <div class="scope-strip">
+          <span class="mono">First module — EC2 RC Section Designer</span>
+          <p>Rectangular and circular sections · axial force with uniaxial or biaxial bending · shear · multiple load cases · calculation report. In development; early access will be limited.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="report">
+      <div class="wrap report-grid">
+        <div class="report-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> The report</p>
+          <h2>Every number has a clause behind it.</h2>
+          <p class="lede">The calculation is not a black box. The report keeps the input values, the equations and the clause reference in one place — so a reviewer can follow the path from <span class="mono">N_Ed</span> to the final check.</p>
+          <p class="report-note">The same clause-cited approach runs through the blog’s worked examples. Check the method there before you trust the tool.</p>
+        </div>
+        <div class="report-card">
+          <div class="report-card-head">
+            <div>
+              <span class="mono report-kicker">Design check</span>
+              <h3>400 × 400 · 4H25 · C30/37</h3>
+            </div>
+            <span class="pill pill-pass">PASS</span>
+          </div>
+          <p class="report-sub mono">N_Ed = 800 kN · M_Ed = 180 kNm · uniaxial bending</p>
+          <table class="check-table">
+            <thead>
+              <tr><th scope="col">Check</th><th scope="col">Result</th><th scope="col">Clause</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>M_Rd at N_Ed</td><td>240.3 kNm</td><td class="mono">Eq (6.9)</td><td><span class="status">PASS</span></td></tr>
+              <tr><td>e ≥ e₀</td><td>225 mm</td><td class="mono">§6.1(4)</td><td><span class="status">PASS</span></td></tr>
+              <tr><td>A_s,min</td><td>320 mm²</td><td class="mono">§9.5.2(2)</td><td><span class="status">PASS</span></td></tr>
+              <tr><td>A_s,max</td><td>6,400 mm²</td><td class="mono">§9.5.2(3)</td><td><span class="status">PASS</span></td></tr>
+              <tr class="row-emphasis"><td>M_Ed / M_Rd</td><td>0.75</td><td class="mono">—</td><td><span class="status">PASS</span></td></tr>
+            </tbody>
+          </table>
+          <p class="report-foot">Example from the EC2 §6.1 worked example. Values rounded.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="wrap examples-grid">
+        <div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Worked examples</p>
+          <h2>Check the method before you trust the tool.</h2>
+          <p class="lede">Each example is a complete EC2 calculation with every intermediate value, a free spreadsheet, and a clause-by-clause verification record. Civion automates the same method — not a different one.</p>
+          <a class="btn btn-primary" href="https://hugoyoungmsc.github.io/">Read the worked examples</a>
+        </div>
+        <div class="example-list">
+          <a class="example" href="https://hugoyoungmsc.github.io/2026/10/24/ec2-shear-rectangular-beam-vertical-links.html">
+            <span class="mono example-tag">EC2 §6.2</span>
+            <h3>Shear design — V_Rd,c, V_Rd,max, links</h3>
+            <p>Distance-d, the ν₁ trap, the 0.998 near-miss, and the detailing check.</p>
+            <span class="example-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="example" href="https://hugoyoungmsc.github.io/">
+            <span class="mono example-tag">EC2 §6.1</span>
+            <h3>Column design — axial force + bending</h3>
+            <p>Strain compatibility, the P-M interaction diagram, and a full column check.</p>
+            <span class="example-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="who">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Who it’s for</p>
+          <h2>Built for engineers who design to Eurocode.</h2>
+        </div>
+        <div class="who-grid">
+          <article class="who-card">
+            <h3>Solo structural engineers</h3>
+            <p>You design, check and document your own work. You want the calculation visible, not buried in a black box — and a report you can hand over without rebuilding it.</p>
+          </article>
+          <article class="who-card">
+            <h3>Small consultancies</h3>
+            <p>One or two licences of the big suites, shared across the team. You need a quick, transparent section check without waiting for a seat.</p>
+          </article>
+        </div>
+        <p class="disclaimer">Civion is a calculation tool, not a design service. Every result must be independently verified by a qualified engineer for the specific project.</p>
+      </div>
+    </section>
+
+    <section class="section section-cta" id="early-access">
+      <div class="wrap cta-grid">
+        <div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Early access</p>
+          <h2>Get in before the beta opens.</h2>
+          <p class="lede">Civion is in active development. The early-access list gets one email when the beta opens — no newsletter, no payment details.</p>
+          <p class="cta-note">If you work on a specific section you want to test first, tell me the shape, bars and load case. It helps shape the beta.</p>
+        </div>
+        <div class="cta-card">
+          <span class="mono cta-kicker">Early-access beta</span>
+          <p class="cta-price">Free during early access.</p>
+          <p class="cta-sub">No pricing yet. Early-access members will hear first when paid plans are announced.</p>
+          <a class="btn btn-accent btn-block" href="mailto:hugo@civion.cloud?subject=Civion%20early%20access">Join the early-access list</a>
+          <p class="cta-fine">Opens your email app · or write to <a href="mailto:hugo@civion.cloud">hugo@civion.cloud</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Civion home">
+          <img src="assets/civion-mark.svg" width="28" height="28" alt="">
+          <span>Civion</span>
+        </a>
+        <p>EC2 section design that shows its work.</p>
+        <p class="footer-fine">Built by <a href="https://hugoyoungmsc.github.io/">Hugo Young, MSc</a>.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#how">How it works</a>
+        <a href="#report">The report</a>
+        <a href="https://hugoyoungmsc.github.io/">Worked examples</a>
+        <a href="#early-access">Early access</a>
+      </nav>
+      <nav class="footer-nav" aria-label="Legal">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:hugo@civion.cloud">Contact</a>
+      </nav>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2026 Civion. All rights reserved.</p>
+      <p class="footer-fine">Civion is in development. Calculations must be independently verified by a qualified engineer.</p>
+    </div>
+  </footer>
+</body>
+</html>
