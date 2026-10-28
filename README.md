@@ -14,6 +14,7 @@ No build step, no framework, no server. Plain HTML/CSS, served by GitHub Pages.
 | `privacy.html` | Privacy Policy — simplified early-access policy (Civion + email; no legal name/address) |
 | `404.html` | GitHub Pages 404 |
 | `CNAME` | `civion.cloud` — required by GitHub Pages |
+| `.nojekyll` | Serve the static files without Jekyll processing |
 | `robots.txt` | Allows indexing; points to the sitemap |
 | `sitemap.xml` | Home, Terms, Privacy |
 | `assets/civion-mark.svg` | Wordmark mark |
