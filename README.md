@@ -47,14 +47,17 @@ What this means:
 ## Deploy to GitHub Pages
 
 1. Create a **public** repository under `hugoyoungmsc`, suggested name `civion-landing`.
-2. From this folder:
+2. This folder is already a git repo on branch `main`, with the `origin` remote configured and one commit. Create the repo **empty** (no README, no .gitignore, no licence), then push:
 
    ```bash
-   git init
-   git add .
-   git commit -m "Civion landing page"
-   git branch -M main
+   git push -u origin main
+   ```
+
+   If the remote is missing in a fresh copy:
+
+   ```bash
    git remote add origin https://github.com/hugoyoungmsc/civion-landing.git
+   git branch -M main
    git push -u origin main
    ```
 
