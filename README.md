@@ -32,7 +32,7 @@ python -m http.server 8000
 
 ## Notes
 
-- Early-access list: `mailto:hugo@civion.cloud` links only — no third-party form or processor. Revisit a Tally/Formspree form at beta launch.
+- Primary CTA links to the live app at https://app.civion.cloud (sign-up is handled there). `mailto:hugo@civion.cloud` remains for contact and feedback.
 - System fonts and local assets only — no external scripts, no analytics, no cookies.
 - The P-M diagram comes from the EC2 §6.1 worked example. If the example changes, replace `assets/pm-hero.svg`.
 - The site is separate from the Hugo Young blog (`hugoyoungmsc.github.io`): the blog is the engineering notebook, this is the product site.
