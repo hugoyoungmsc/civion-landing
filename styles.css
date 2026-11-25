@@ -404,6 +404,99 @@ h2 {
   color: var(--muted);
 }
 
+/* Category contrast */
+.difference-panel {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 40px;
+  margin-top: 48px;
+  padding: 38px 40px;
+  background: var(--navy);
+  border-radius: 12px;
+  color: var(--white);
+}
+.difference-panel .eyebrow { color: #a9bfd4; }
+.difference-panel h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.55rem, 2.7vw, 2.1rem);
+  color: var(--white);
+}
+.difference-lede {
+  margin: 0 0 22px;
+  max-width: 60ch;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: rgba(244, 247, 250, 0.76);
+}
+.difference-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.difference-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: rgba(244, 247, 250, 0.76);
+}
+.difference-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+.difference-list strong { color: var(--white); font-weight: 650; }
+.difference-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 34px;
+  border-left: 1px solid rgba(244, 247, 250, 0.18);
+}
+.difference-cta .mono {
+  margin: 0;
+  font-size: 0.66rem;
+  line-height: 1.6;
+  color: #a9bfd4;
+}
+.difference-cta-line {
+  margin: 0 0 14px;
+  font-size: 1.32rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.difference-cta .btn { align-self: flex-start; }
+
+/* CTA includes */
+.cta-includes {
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #c9d6e3;
+}
+.cta-includes li { position: relative; padding-left: 16px; }
+.cta-includes li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: 700;
+}
+
 /* Report */
 .report-grid {
   display: grid;
@@ -687,6 +780,13 @@ h2 {
 @media (max-width: 900px) {
   .nav { display: none; }
   .header-inner { gap: 16px; }
+  .difference-panel { grid-template-columns: 1fr; gap: 26px; padding: 30px 24px; }
+  .difference-cta {
+    padding-left: 0;
+    padding-top: 24px;
+    border-left: 0;
+    border-top: 1px solid rgba(244, 247, 250, 0.18);
+  }
 }
 
 @media (max-width: 780px) {

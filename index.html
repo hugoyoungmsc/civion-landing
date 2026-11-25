@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Civion — EC2 reinforced concrete section design</title>
-  <meta name="description" content="Civion runs the EN 1992-1-1 checks, draws the P-M interaction diagram, and assembles the calculation report — with the clause behind every check. Early access is open for structural engineers.">
+  <title>Civion — EC2 reinforced concrete member design</title>
+  <meta name="description" content="Civion runs the EN 1992-1-1 member checks from your load cases, draws the interaction diagram, and assembles the calculation report — with the clause behind every check. Early access is open for structural engineers.">
   <link rel="canonical" href="https://civion.cloud/">
   <meta name="theme-color" content="#0d2137">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://civion.cloud/">
-  <meta property="og:title" content="Civion — EC2 section design that shows its work">
-  <meta property="og:description" content="EC2 checks, P-M interaction diagrams, and clause-cited calculation reports. Early access is open.">
+  <meta property="og:title" content="Civion — EC2 member design that shows its work">
+  <meta property="og:description" content="From load cases to a checked member report — EC2 checks, national-annex routes, and clause-cited reports. Early access is open.">
   <meta property="og:image" content="https://civion.cloud/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Civion — EC2 section design that shows its work">
-  <meta name="twitter:description" content="EC2 checks, P-M interaction diagrams, and clause-cited calculation reports. Early access is open.">
+  <meta name="twitter:title" content="Civion — EC2 member design that shows its work">
+  <meta name="twitter:description" content="From load cases to a checked member report — EC2 checks, national-annex routes, and clause-cited reports. Early access is open.">
   <meta name="twitter:image" content="https://civion.cloud/assets/og.png">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -51,12 +51,12 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> EC2 reinforced concrete section design</p>
-          <h1>Section design that<br><em>shows its work.</em></h1>
-          <p class="lede">Civion runs the EN 1992-1-1 checks, draws the interaction diagram, and assembles the calculation report — with the clause behind every check. For engineers who still check the numbers.</p>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> EC2 reinforced concrete member design</p>
+          <h1>From loads to a checked<br><em>member report.</em></h1>
+          <p class="lede">Civion runs the EN 1992-1-1 member checks from your load cases, draws the interaction diagram, and assembles the calculation report — with the clause behind every check. For engineers who still check the numbers.</p>
           <div class="hero-actions">
             <a class="btn btn-accent" href="https://app.civion.cloud/register">Create free account</a>
-            <a class="btn btn-ghost" href="https://hugoyoungmsc.github.io/2026/10/24/ec2-shear-rectangular-beam-vertical-links.html">Read a worked example</a>
+            <a class="btn btn-ghost" href="https://hugoyoungmsc.github.io/2026/11/23/ec2-bending-rectangular-beam.html">See a full member design</a>
           </div>
           <p class="hero-note">Early access is open · Free during early access · No payment now</p>
         </div>
@@ -105,6 +105,26 @@
             <p>The calculation is done, then the report is written again — screenshots, tables and clause references pasted into Word.</p>
           </article>
         </div>
+
+        <div class="difference-panel">
+          <div class="difference-copy">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Why not a free calculator?</p>
+            <h2>How this differs from a free section calculator.</h2>
+            <p class="difference-lede">Free calculators are excellent when you need one check. Civion is built for the design you have to hand over.</p>
+            <ul class="difference-list">
+              <li><strong>It starts from load cases</strong>, not a single M or V you typed in.</li>
+              <li><strong>It runs every load case</strong> and shows the utilisation of each.</li>
+              <li><strong>It applies a named national-annex route</strong> — CEN or French NA; UK NA next — not just a set of NDP values.</li>
+              <li><strong>It keeps the project</strong>, client and calculation history.</li>
+              <li><strong>It exports</strong> a branded PDF and Excel workbook.</li>
+            </ul>
+          </div>
+          <aside class="difference-cta">
+            <p class="mono">Use a free calculator when you need a number.</p>
+            <p class="difference-cta-line">Use Civion when you need a design.</p>
+            <a class="btn btn-accent" href="https://app.civion.cloud/register">Create free account</a>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -112,13 +132,13 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow"><span class="dot" aria-hidden="true"></span> How it works</p>
-          <h2>One workflow, from section to checked report.</h2>
+          <h2>One workflow, from loads to a checked member report.</h2>
         </div>
         <div class="steps">
           <article class="step">
             <span class="step-num mono">01</span>
-            <h3>Define the section</h3>
-            <p>Rectangular or circular, bars, links, materials and cover. One input set, reusable across load cases.</p>
+            <h3>Define the member</h3>
+            <p>Section geometry, bars, links, materials and cover. One input set, reusable across load cases.</p>
             <span class="tag mono">Inputs</span>
           </article>
           <article class="step">
@@ -141,8 +161,8 @@
           </article>
         </div>
         <div class="scope-strip">
-          <span class="mono">Modules — EC2 RC Column &amp; Beam Section Designers</span>
-          <p>Columns: rectangular and circular sections, axial force with uniaxial or biaxial bending · Beams: rectangular and flanged bending, shear with links, crack width · multiple load cases · calculation report. Early access is open — free during early access.</p>
+          <span class="mono">Modules — EC2 Column &amp; Beam Designers</span>
+          <p>Columns: rectangular and circular, axial force with biaxial bending on an M–M surface (§5.8.9), second-order effects (§5.8.8), shear, crack width and cover · Beams: rectangular and flanged bending, shear with links, crack width · multiple load cases and CSV batch (1,000+) · CEN and French NA routes, UK NA next · branded PDF and Excel reports. Early access is open — free during early access.</p>
         </div>
       </div>
     </section>
@@ -169,7 +189,7 @@
               <tr><th scope="col">Check</th><th scope="col">Result</th><th scope="col">Clause</th><th scope="col">Status</th></tr>
             </thead>
             <tbody>
-              <tr><td>M_Rd at N_Ed</td><td>240.3 kNm</td><td class="mono">Eq (6.9)</td><td><span class="status">PASS</span></td></tr>
+              <tr><td>M_Rd at N_Ed</td><td>240.3 kNm</td><td class="mono">§6.1</td><td><span class="status">PASS</span></td></tr>
               <tr><td>e ≥ e₀</td><td>225 mm</td><td class="mono">§6.1(4)</td><td><span class="status">PASS</span></td></tr>
               <tr><td>A_s,min</td><td>320 mm²</td><td class="mono">§9.5.2(2)</td><td><span class="status">PASS</span></td></tr>
               <tr><td>A_s,max</td><td>6,400 mm²</td><td class="mono">§9.5.2(3)</td><td><span class="status">PASS</span></td></tr>
@@ -219,7 +239,7 @@
           </article>
           <article class="who-card">
             <h3>Small consultancies</h3>
-            <p>One or two licences of the big suites, shared across the team. You need a quick, transparent section check without waiting for a seat.</p>
+            <p>One or two licences of the big suites, shared across the team. You need a quick, transparent member design without waiting for a seat.</p>
           </article>
         </div>
         <p class="disclaimer">Civion is a calculation tool, not a design service. Every result must be independently verified by a qualified engineer for the specific project.</p>
@@ -232,12 +252,19 @@
           <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Early access</p>
           <h2>Start using Civion today.</h2>
           <p class="lede">Civion is live in early access. Create an account in the app and start designing — free during early access, no payment details.</p>
-          <p class="cta-note">If you work on a specific section you want to test first, tell me the shape, bars and load case. It helps shape the roadmap.</p>
+          <p class="cta-note">If you work on a specific member you want to test first, tell me the section, bars and load case. It helps shape the roadmap.</p>
         </div>
         <div class="cta-card">
           <span class="mono cta-kicker">Early access · live now</span>
           <p class="cta-price">Free during early access.</p>
           <p class="cta-sub">No pricing yet. Create an account and start designing — paid plans will be announced later.</p>
+          <ul class="cta-includes">
+            <li>EC2 Column &amp; Beam Designers</li>
+            <li>Multiple load cases + CSV batch</li>
+            <li>CEN and French NA routes; UK NA next</li>
+            <li>Projects, clients and calculation history</li>
+            <li>Branded PDF + Excel reports</li>
+          </ul>
           <a class="btn btn-accent btn-block" href="https://app.civion.cloud/register">Create free account</a>
           <p class="cta-fine">Sign in or create an account · or write to <a href="mailto:hugo@civion.cloud">hugo@civion.cloud</a></p>
         </div>
@@ -252,7 +279,7 @@
           <img src="assets/civion-mark.svg" width="28" height="28" alt="">
           <span>Civion</span>
         </a>
-        <p>EC2 section design that shows its work.</p>
+        <p>EC2 member design that shows its work.</p>
         <p class="footer-fine">Built by <a href="https://hugoyoungmsc.github.io/">Hugo Young, MSc</a>.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">

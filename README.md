@@ -1,6 +1,6 @@
 # Civion landing page — `civion.cloud`
 
-Static marketing site for Civion, the EC2 reinforced concrete column section design tool.
+Static marketing site for Civion, the EC2 reinforced concrete member design app (columns and beams).
 
 Plain HTML/CSS — no build step, no framework, no server. Served by GitHub Pages.
 
@@ -8,7 +8,7 @@ Plain HTML/CSS — no build step, no framework, no server. Served by GitHub Page
 
 | File | Purpose |
 |---|---|
-| `index.html` | Landing page: hero, problem, how it works, report, examples, audience, early access |
+| `index.html` | Landing page: hero, problem, category contrast, how it works, report, examples, audience, early access |
 | `styles.css` | All styling |
 | `terms.html` | Terms of Service — simplified early-access policy |
 | `privacy.html` | Privacy Policy — simplified early-access policy |
