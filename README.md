@@ -10,13 +10,14 @@ Plain HTML/CSS — no build step, no framework, no server. Served by GitHub Page
 |---|---|
 | `index.html` | Landing page: hero, problem, category contrast, how it works, report, examples, audience, early access |
 | `styles.css` | All styling |
+| `verification.html` | Public verification record (checks, sources, limits) |
 | `terms.html` | Terms of Service — simplified early-access policy |
 | `privacy.html` | Privacy Policy — simplified early-access policy |
 | `404.html` | 404 page |
 | `CNAME` | `civion.cloud` — GitHub Pages custom domain |
 | `.nojekyll` | Serve the static files without Jekyll processing |
 | `robots.txt` | Allows indexing; points to the sitemap |
-| `sitemap.xml` | Home, Terms, Privacy |
+| `sitemap.xml` | Home, Verification, Terms, Privacy |
 | `assets/civion-mark.svg` | Wordmark mark |
 | `assets/favicon.svg` | Favicon |
 | `assets/pm-hero.svg` | Hero P-M interaction diagram (from the EC2 §6.1 worked example) |
