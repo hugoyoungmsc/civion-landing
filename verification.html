@@ -32,7 +32,7 @@
   <main id="main" class="legal-wrap wrap">
     <article class="legal-card legal">
       <h1>Verification</h1>
-      <p class="legal-updated">Last updated: 25 November 2026</p>
+      <p class="legal-updated">Last updated: 26 November 2026</p>
 
       <p>Civion publishes what it checks, how each result was verified, and what it does
       not do. The calculation report carries the clause, equation and inputs behind every
@@ -63,8 +63,8 @@
       text on 17 November 2026.</p>
 
       <h2>EC2 Beam Designer</h2>
-      <p>Simply supported rectangular and flanged T beams under a UDL, point loads, or
-      direct design actions.</p>
+      <p>Simply supported and 2–3 span continuous rectangular and flanged T beams under
+      a UDL, point loads, or direct design actions.</p>
       <table class="verify-table">
         <thead>
           <tr><th scope="col">Check</th><th scope="col">Clause</th><th scope="col">Method</th></tr>
@@ -84,6 +84,29 @@
       blog posts #1, #3, #5 and #6, the point-load, direct-action and deflection
       boundary cases, and the continuous-beam analysis, hogging and envelope cases.</p>
 
+      <h2>EC2 Slab Designer</h2>
+      <p>One-way solid slabs on a 1000 mm design strip: simply supported and 2–3 span
+      continuous, with UDL and point loads.</p>
+      <table class="verify-table">
+        <thead>
+          <tr><th scope="col">Check</th><th scope="col">Clause</th><th scope="col">Method</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bending</td><td>6.1</td><td>§3.1.7(3) block; A<sub>s,req</sub> and M<sub>Rd</sub> per metre</td></tr>
+          <tr><td>Minimum / maximum steel</td><td>9.2.1.1 via 9.3.1.1</td><td>A<sub>s,min</sub> = max(0.26 f<sub>ctm</sub>/f<sub>yk</sub>, 0.0013) b<sub>t</sub> d; A<sub>s,max</sub> = 0.04 A<sub>c</sub></td></tr>
+          <tr><td>Shear without links</td><td>6.2.2</td><td>V<sub>Rd,c</sub> only; a section needing links is reported as not covered</td></tr>
+          <tr><td>Crack width</td><td>7.3.2 / 7.3.4</td><td>Eqs (7.8)–(7.14), CEN spacing route</td></tr>
+          <tr><td>Deflection</td><td>7.4.2</td><td>Span/depth limits, Eqs (7.16a/b), (7.17); K from Table 7.4N</td></tr>
+          <tr><td>Slab detailing</td><td>9.3.1.1</td><td>Secondary ≥ 20% of principal; spacing 3h ≤ 400 mm / 3.5h ≤ 450 mm (local 2h ≤ 250 mm / 3h ≤ 400 mm)</td></tr>
+          <tr><td>Continuous analysis</td><td>5.1–5.4</td><td>2–3 span three-moment analysis; pattern envelope</td></tr>
+          <tr><td>Reinforcement suggestions</td><td>—</td><td>Deterministic bottom/top bar-spacing search through the checks above</td></tr>
+        </tbody>
+      </table>
+      <p class="verify-fine">12 automated tests across closed-form actions, bending hand
+      calculations, V<sub>Rd,c</sub>, the two-span envelope, Table 7.4N and the spacing
+      search. CEN values only; punching, shear reinforcement design, two-way action and
+      report downloads are not part of the first release.</p>
+
       <h2>Verification sources</h2>
       <ul>
         <li>EN 1992-1-1:2004, the governing code text.</li>
@@ -94,6 +117,7 @@
       <h2>Not covered yet</h2>
       <ul>
         <li>UK National Annex; the current routes are CEN and the French NA.</li>
+        <li>Slab punching (§6.4), two-way slabs, shear reinforcement design and slab report downloads.</li>
         <li>Cantilevers, 4+ spans, unequal EI and support settlement in continuous mode.</li>
         <li>Calculated deflection (§7.4.3); the simplified §7.4.2 check only.</li>
         <li>The §9.5.3(4) spacing reductions near beams/slabs and laps.</li>
