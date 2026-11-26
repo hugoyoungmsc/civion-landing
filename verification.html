@@ -74,11 +74,13 @@
           <tr><td>Shear</td><td>6.2.2 / 6.2.3</td><td>V_Rd,c, V_Rd,s, V_Rd,max; link sizing</td></tr>
           <tr><td>Crack width</td><td>7.3.2 / 7.3.4</td><td>Eqs (7.8)–(7.14); CEN and NF spacing route</td></tr>
           <tr><td>Deflection</td><td>7.4.2</td><td>Simplified span/depth limits, Eqs (7.16a/b), (7.17)</td></tr>
+          <tr><td>Continuous analysis</td><td>5.1–5.4, 5.5</td><td>2–3 span three-moment analysis; pattern envelope; δ redistribution</td></tr>
+          <tr><td>Support hogging</td><td>6.1, 9.2.1.1</td><td>Top steel at intermediate supports</td></tr>
         </tbody>
       </table>
-      <p class="verify-fine">63 automated tests, including the published worked examples in
-      blog posts #1, #3, #5 and #6, plus the point-load, direct-action and deflection
-      boundary cases.</p>
+      <p class="verify-fine">85 automated tests, including the published worked examples in
+      blog posts #1, #3, #5 and #6, the point-load, direct-action and deflection
+      boundary cases, and the continuous-beam analysis, hogging and envelope cases.</p>
 
       <h2>Verification sources</h2>
       <ul>
@@ -90,7 +92,7 @@
       <h2>Not covered yet</h2>
       <ul>
         <li>UK National Annex; the current routes are CEN and the French NA.</li>
-        <li>Continuous beams and redistribution; the beam module is simply supported.</li>
+        <li>Cantilevers, 4+ spans, unequal EI and support settlement in continuous mode.</li>
         <li>Calculated deflection (§7.4.3); the simplified §7.4.2 check only.</li>
         <li>The §9.5.3(4) spacing reductions near beams/slabs and laps.</li>
         <li>Torsion, punching shear, slabs, footings, walls, fire and seismic design.</li>
