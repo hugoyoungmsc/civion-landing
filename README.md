@@ -1,6 +1,6 @@
 # Civion landing page — `civion.cloud`
 
-Static marketing site for Civion, the EC2 reinforced concrete member design app (columns and beams).
+Static marketing site for Civion, the EC2 reinforced concrete member design app (columns, beams and slabs).
 
 Plain HTML/CSS — no build step, no framework, no server. Served by GitHub Pages.
 
@@ -36,6 +36,7 @@ python -m http.server 8000
 - Primary CTA links to the live app at https://app.civion.cloud (sign-up is handled there). `mailto:hugo@civion.cloud` remains for contact and feedback.
 - System fonts and local assets only — no external scripts, no analytics, no cookies.
 - The P-M diagram comes from the EC2 §6.1 worked example. If the example changes, replace `assets/pm-hero.svg`.
+- `verification.html` is a derivative of the canonical records in `../Civion/docs/verification/`; update both in the same change.
 - The site is separate from the Hugo Young blog (`hugoyoungmsc.github.io`): the blog is the engineering notebook, this is the product site.
 
 ## Contact
