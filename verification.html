@@ -54,10 +54,11 @@
           <tr><td>SLS stress limitation</td><td>7.2</td><td>Concrete and steel stress limits</td></tr>
           <tr><td>Crack width</td><td>7.3.2 / 7.3.4</td><td>Eqs (7.8)–(7.14); CEN and NF spacing route</td></tr>
           <tr><td>Column detailing</td><td>9.5.2 / 9.5.3</td><td>Bar diameter, A<sub>s,min</sub>/A<sub>s,max</sub>, link diameter and spacing</td></tr>
+          <tr><td>Reinforcement suggestions</td><td>—</td><td>Deterministic rectangular/circular layout search using the checks above</td></tr>
           <tr><td>Cover</td><td>4.2 / 4.4.1</td><td>Table 4.4N; Eqs (4.1), (4.2)</td></tr>
         </tbody>
       </table>
-      <p class="verify-fine">262 automated tests, including the published worked examples in
+      <p class="verify-fine">267 automated tests, including the published worked examples in
       blog posts #2, #7 and #8. The clause index was checked against the CEN English 2004
       text on 17 November 2026.</p>
 
@@ -76,9 +77,10 @@
           <tr><td>Deflection</td><td>7.4.2</td><td>Simplified span/depth limits, Eqs (7.16a/b), (7.17)</td></tr>
           <tr><td>Continuous analysis</td><td>5.1–5.4, 5.5</td><td>2–3 span three-moment analysis; pattern envelope; δ redistribution</td></tr>
           <tr><td>Support hogging</td><td>6.1, 9.2.1.1</td><td>Top steel at intermediate supports</td></tr>
+          <tr><td>Reinforcement suggestions</td><td>—</td><td>Deterministic single-row layout and link-spacing search</td></tr>
         </tbody>
       </table>
-      <p class="verify-fine">85 automated tests, including the published worked examples in
+      <p class="verify-fine">89 automated tests, including the published worked examples in
       blog posts #1, #3, #5 and #6, the point-load, direct-action and deflection
       boundary cases, and the continuous-beam analysis, hogging and envelope cases.</p>
 
@@ -95,6 +97,7 @@
         <li>Cantilevers, 4+ spans, unequal EI and support settlement in continuous mode.</li>
         <li>Calculated deflection (§7.4.3); the simplified §7.4.2 check only.</li>
         <li>The §9.5.3(4) spacing reductions near beams/slabs and laps.</li>
+        <li>Auto-selection is single-row for beams and rectangular/circular for columns; no bundles or cost optimisation.</li>
         <li>Torsion, punching shear, slabs, footings, walls, fire and seismic design.</li>
         <li>Nominal-stiffness second-order analysis; the column uses nominal curvature.</li>
       </ul>
