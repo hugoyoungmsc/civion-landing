@@ -87,7 +87,9 @@
 
       <h2>EC2 Slab Designer</h2>
       <p>One-way solid slabs on a 1000 mm design strip: simply supported and 2–3 span
-      continuous, with UDL and point loads.</p>
+      continuous, with UDL and point loads. Flat slabs on a regular 2–3 span column
+      grid are analysed with the equivalent frame method, with punching checks at
+      interior, edge and corner columns.</p>
       <table class="verify-table">
         <thead>
           <tr><th scope="col">Check</th><th scope="col">Clause</th><th scope="col">Method</th></tr>
@@ -100,13 +102,20 @@
           <tr><td>Deflection</td><td>7.4.2</td><td>Span/depth limits, Eqs (7.16a/b), (7.17); K from Table 7.4N</td></tr>
           <tr><td>Slab detailing</td><td>9.3.1.1</td><td>Secondary ≥ 20% of principal; spacing 3h ≤ 400 mm / 3.5h ≤ 450 mm (local 2h ≤ 250 mm / 3h ≤ 400 mm)</td></tr>
           <tr><td>Continuous analysis</td><td>5.1–5.4</td><td>2–3 span three-moment analysis; pattern envelope</td></tr>
-          <tr><td>Reinforcement suggestions</td><td>—</td><td>Deterministic bottom/top bar-spacing search through the checks above</td></tr>
+          <tr><td>Flat-slab analysis</td><td>—</td><td>Equivalent frame (ICE Designers' Guide); panel moments split 70/30 negative and 60/40 positive between column and middle strips</td></tr>
+          <tr><td>Punching shear</td><td>6.4.2–6.4.5</td><td>u1 at 2d for interior/edge/corner columns; β = 1.15 / 1.4 / 1.5 (§6.4.3(6) recommended); v<sub>Rd,c</sub> Eq (6.47); links Eq (6.52); u<sub>out</sub> Eq (6.54)</td></tr>
+          <tr><td>Punching detailing</td><td>9.4.3</td><td>≥ 2 link perimeters; s<sub>r</sub> ≤ 0.75d; first link ≤ d/2; tangential ≤ 1.5d; A<sub>sw,min</sub> Eq (9.11)</td></tr>
+          <tr><td>Flat-slab top steel</td><td>9.4.1(2)</td><td>0.5A<sub>t</sub> within 0.125 × panel width each side of the column</td></tr>
+          <tr><td>Reinforcement suggestions</td><td>—</td><td>Deterministic bottom/top bar-spacing search through the checks above (one-way slabs)</td></tr>
         </tbody>
       </table>
-      <p class="verify-fine">12 automated tests across closed-form actions, bending hand
-      calculations, V<sub>Rd,c</sub>, the two-span envelope, Table 7.4N and the spacing
-      search. CEN values only; punching, shear reinforcement design, two-way action and
-      report downloads are not part of the first release.</p>
+      <p class="verify-fine">34 automated tests across closed-form actions, bending hand
+      calculations, both shear branches, a cracked crack-width hand calculation, both
+      deflection equations, Table 7.4N, the spacing search, Excel/PDF report exports,
+      equivalent-frame moments, punching at interior/edge/corner columns and the ICE
+      Designers' Guide Example 6.2 perimeter and resistance. CEN values only; two-way
+      slabs without beams, point loads on flat slabs, drops and column heads are not
+      covered.</p>
 
       <h2>Verification sources</h2>
       <ul>
@@ -118,12 +127,12 @@
       <h2>Not covered yet</h2>
       <ul>
         <li>UK National Annex; the current routes are CEN and the French NA.</li>
-        <li>Slab punching (§6.4), two-way slabs, shear reinforcement design and slab report downloads.</li>
+        <li>Two-way slabs without beams, flat-slab point loads, drops and column heads; one-way shear reinforcement design.</li>
         <li>Cantilevers, 4+ spans, unequal EI and support settlement in continuous mode.</li>
         <li>Calculated deflection (§7.4.3); the simplified §7.4.2 check only.</li>
         <li>The §9.5.3(4) spacing reductions near beams/slabs and laps.</li>
         <li>Auto-selection is single-row for beams and rectangular/circular for columns; no bundles or cost optimisation.</li>
-        <li>Torsion, punching shear, slabs, footings, walls, fire and seismic design.</li>
+        <li>Torsion, footings, walls, fire and seismic design.</li>
         <li>Nominal-stiffness second-order analysis; the column uses nominal curvature.</li>
       </ul>
 
